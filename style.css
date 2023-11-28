@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 60%;
+}
+
+.accordion-button{
+   font-size: 20px;
+   font-weight: 600;
+}
+.accordion-body{
+    text-align: justify;
+}
+.main-content{
+    justify-content: space-between;
+}
+#game-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+}
+.numbers{
+    font-size: 60px;
+    text-align: center;
+}
+.btn{
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+}
+.score-content{
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    gap: 15px;
+}
+.fa-heart{
+    color: red;
+}
+.fa-star{
+    color:yellow
+}
+.life{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    height: 30px;
+}
+.score{
+    display: flex;
+    align-items: baseline;
+    gap:5px;
+}
+.score-content div{
+    font-weight: 700;
+}
+

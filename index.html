@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>odev5</title>
+</head>
+
+<body>
+    <div class="content" style="max-width: 40rem;">
+        <div class="accordion accordion-flush card" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header bg-transparent border-secondary">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        How to play?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Click the "start" button to start the game. You will see constantly changing numbers from 1 to 10. When you want to stop the counter and make a guess, click the "stop" button and try to guess the last number. Each correct answer gives you 1 point and when you reach 3 wrong answers the game is over.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content row border border-secondary-subtle h-100 p-4 m-0">
+            <div id="game-content" class="col-sm-6 mb-3 mb-sm-0">
+                <div id="btn-start" class="btn btn-primary">Start</div>
+                <div class="numbers">?</div>
+                <div id="btn-stop" class="btn btn-warning">Stop</div>
+                <input id="input-text" type="text">
+                <div id="btn-send" class="btn btn-danger">Make a Guess!</div>
+            </div>
+            <div class="score-content col-sm-6">
+                <div class="life">
+                    <i class="fa-solid fa-heart"></i>
+                    <div id="life-num"> 3</div>
+                </div>
+                <div class="score">
+                    <i class="fa-solid fa-star"></i>
+                    <div id="score-num"> 0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
